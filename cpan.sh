@@ -28,6 +28,8 @@ cpanm DBI
 cpanm DBD::SQLite
 
 # Postgres:
+sudo apt-get -y install libpq-dev
+pg_config
 cpanm DBD::Pg
 
 ### Update
