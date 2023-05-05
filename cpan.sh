@@ -1,33 +1,36 @@
+#!/bin/bash
 
-brew install libunistring
-
-brew uninstall wget
-brew install wget
-brew install cpanminus
-
+### Common packages
 cpanm DateTime
 cpanm Dotenv
-cpanm DBI
-cpanm DBD::SQLite
 cpanm Log::Log4perl
 cpanm Text::ANSITable
+
+### Web
 cpanm JSON
+cpanm Crypt::JWT
 cpanm LWP::UserAgent
 cpanm LWP::Protocol::https
 
-cpanm Dancer2
-cpanm Dancer2::Plugin::JWT
-Crypt::JWT
-
+### Testing
 
 cpanm Test::More
 cpanm Test::Deep
 cpanm Test::Warn
 
+### Dancer
+
+cpanm Dancer2
+cpanm Dancer2::Plugin::JWT
+
+### Database related
+cpanm DBI
+cpanm DBD::SQLite
+
+# Postgres:
+cpanm DBD::Pg
+
+### Update
 cpan -u
 
-brew install postgresql@15
-brew install libpq
-brew link libpq --force
 
-cpanm DBD::Pg --force
