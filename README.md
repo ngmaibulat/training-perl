@@ -1,3 +1,9 @@
+### Notes
+
+- It is recommended to use DevContainers
+
+### Basics
+
 -   File io
 -   OOP: Create classes, objects, and methods
 -   use DBI
